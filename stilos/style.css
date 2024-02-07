@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --darkblue-400 :#0a3871;
+    --gray-100:#f3f5fc;
+    --gray-200:#d8dfe8;
+    --white:#ffffff;
+}
+body{
+    width: 100%;
+    background: var(--gray-100);
+
+}
+.container1{
+    display:flex ;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+   
+}
+.container2{
+    display: flex;
+    height: 100%;
+    width: 100;
+}
+
+.logo{
+    width: 80%;
+    
+    
+}
+.esquerda{
+    
+    width: 50%;
+    height: 50%;
+    border-radius: 24px;
+    
+    
+}
+.direita{
+    display: flex;
+    margin-right: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    border-radius: 24px;
+    background: var(--white);
+    
+}
+.mensagem{
+    
+    width: 55%;
+    
+}
+.button_seccao2{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    
+}
+.logoImg{
+    margin-top: 1%;
+    margin-left: 5%;
+    float: inherit;
+}
+
+.text-input{
+    
+    margin-left: 10%;
+    margin-top: 25%;
+    width: 70%;
+    height: 70%;
+    color: var(--darkblue-400);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: var(--gray-100);
+    
+}
+
+
+
+#imgDireita{
+    
+    width: 70%;
+    
+}
+#texto{
+    
+    height: 100%;
+    border-radius: 24px;
+    width: 100%;
+}
+#texto2{
+   
+    color: var(--darkblue-400);
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+input[disabled]{
+    background-color: var(--white);
+}
+#botao_criptografar{
+    padding: 1%;
+    width: 10%;
+    height: 40%;
+    border-radius: 24px;
+    margin-left: 15%;
+    background:var(--darkblue-400);
+    cursor: pointer;
+    text-decoration: none;
+}
+#botao_descriptografar{
+    padding: 1%;
+    width: 10%;
+    height: 40%;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: var(--gray-200);
+    text-align: center;
+}
+#copiar{   
+    margin-left: 25%;
+    width: 50%;
+        
+    padding: 2%;
+    margin-top: 75%;
+        
+    
+    background: var(--gray-200);
+    border-radius: 24px;
+    display: none;
+    text-align: center;
+}
+#textAviso{
+    margin-left: 15%;
+}
+#idcopiar{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}

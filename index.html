@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stilos/style.css">
+    <script type="text/javascript" src="scripts/script.js" async></script>
+    <title>ProjetoOracleAlura</title>
+</head>
+
+<body>
+    <header>
+        <nav><img class="logoImg " src="img/logoAlura.svg" alt="LogotipoAlura"></nav>
+    </header>
+    <main>
+        <section class="container1">
+
+            <div class="esquerda">
+                <input class="text-input" id="textoInput" type="text" placeholder="Digite seu texto aqui!">
+            </div>
+            <div class="direita">
+                <img src="img/logoAlura2.svg" id="imgDireita">
+                <div id="texto">
+
+                    <img class="mensagem" src="img/mensagem.svg" alt="LogoAlura">
+                </div>
+                <input id="texto2" type="text" disabled>
+                <button id="copiar" type="button" name="button" onclick="copiar()"><p id="idcopiar">CCDXCDCDopiar</p></button>
+            </div>
+
+        </section>
+        <section class="container2">
+            <div class="button_seccao2">
+                <p><img id="textAviso" src="img/hug.svg" alt="Apenas letras minúsculas e sem acentuação!! por favor!"></p>
+                <button type="button" id="botao_criptografar" name="button" onclick="criptografar()">Criptografar</button>
+                <button type="button" id="botao_descriptografar" name="button"
+                    onclick="descriptografar()">Descriptografar</button>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
