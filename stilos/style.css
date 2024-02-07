@@ -52,8 +52,9 @@ body{
     
 }
 .mensagem{
-    
+    margin-left: 25%;
     width: 55%;
+    
     
 }
 .button_seccao2{
@@ -86,7 +87,7 @@ body{
 
 
 #imgDireita{
-    
+    margin-left: 16%;
     width: 70%;
     
 }
