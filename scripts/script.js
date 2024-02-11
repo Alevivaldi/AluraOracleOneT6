@@ -4,7 +4,8 @@ var texto =document.getElementById("textoInput").value.toLowerCase();
 function criptografar() {
    document.getElementById("texto2").removeAttribute("disabled");
    document.getElementById("texto2").setAttribute("placeholder","Nenhuma Mensagem");
-
+  
+   
     let texto = document.getElementById("textoInput").value.toLowerCase(); 
     let textoCriptografado = [];
     textoCriptografado = texto.replace(/e/g,"enter");
@@ -14,12 +15,16 @@ function criptografar() {
     textoCriptografado = textoCriptografado.replace(/u/g,"ufat");
     
     document.getElementById("imgDireita").style.display = "none";
-    document.getElementById("texto").style.display = "none";
+    document.getElementById("img2").style.display = "none";
     document.getElementById("texto2").value = textoCriptografado;
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
     document.getElementById("texto2").style.display = "show";
+    document.getElementById("texto2").style.backgroundColor ="#ffffff";
+    let elemento = document.getElementById("texto2");
+    elemento.style.display=" inherit";
     limpar();
+
     
 }
 
@@ -35,7 +40,7 @@ function descriptografar() {
     
 
     document.getElementById("imgDireita").style.display = "show";
-    document.getElementById("texto").style.display = "show";
+   // document.getElementById("texto").style.display = "show";
     document.getElementById("texto2").value = textoDescriptografado;
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";

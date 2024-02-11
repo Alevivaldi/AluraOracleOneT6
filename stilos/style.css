@@ -35,9 +35,9 @@ main{
     
 }
 .text-input{
-   
+   resize: none;
     width: 21.4rem;
-    height: 3rem;
+    height: 18rem;
     color: var(--darkblue-400);
     font-size: 1rem;
     margin-top: 3.5rem;
@@ -50,7 +50,7 @@ main{
     
 }
 #textAviso{
-    margin-top: 15.68rem;
+    margin-top: 0.68rem;
     margin-left: 1rem;
     
     
@@ -64,13 +64,11 @@ main{
     display: flex;
     flex-direction: column;
     
-    justify-content: center;
-    
 }
 #botao_criptografar{
     width:343px;
     height: 67px;
-    margin-bottom: 24px;
+    margin-bottom: 2rem;
     border-radius: 24px;
     background:var(--darkblue-400);
     cursor: pointer;
@@ -85,10 +83,7 @@ main{
     
 }
 
-#mensagem{
-    position: 707px;
-    
-}
+
 #imgDireita{
     margin-left: 16%;
     width: 70%;
@@ -96,44 +91,59 @@ main{
 }
 
 #texto2{
-    background:  url("../img/mensagem.svg") center no-repeat;
-    background-color: var(--white);
+    
+   
+    background-color: var(--gray-100);
     width: 327px;
-    height: 186px;
+    height: 41.18rem;
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 1rem;
     resize: none;
-    margin-top: 707px;
-    padding: 32px;
-    gap: 32px;
-    margin-left: 24px;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: none;
+    
+    margin-left: 1.5rem;
+    border-radius: 32px;
+}
+#img2{
+   
+    background-color: var(--white);
+    width: 327px;
+    height: 11.65rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    margin-top: 4rem;  
+    margin-left: 2rem;
     border-radius: 32px;
 }
 input[disabled]{
     background-color: var(--white);
 }
 
-
-#copiar{   
-    margin-left: 25%;
-    width: 50%;
-        
-    padding: 2%;
-    margin-top: 75%;
-        
+.direita{
+    border: black solid 1px;
     
-    background: var(--gray-200);
+}
+#copiar{
+    background-color:none;
+    width: 17.43rem;
+    position: 1rem;
+    padding: 1.5rem;
+    
     border-radius: 24px;
     display: none;
-    text-align: center;
+    margin-left: 2rem;
+    
 }
 
 #idcopiar{
-    display: flex;
-    justify-content: center;
+   
+    width: 14.43rem;
+    height: 19px;
     
-    width: 100%;
-    height: 100%;
-    text-align: center;
 }
