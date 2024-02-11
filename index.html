@@ -7,37 +7,42 @@
     <script type="text/javascript" src="scripts/script.js" async></script>
     <title>ProjetoOracleAlura</title>
 </head>
+<header>
+    <nav><img src="img/logoAlura.svg" alt="LogotipoAlura"></nav>
+</header>
 
 <body>
-    <header>
-        <nav><img class="logoImg " src="img/logoAlura.svg" alt="LogotipoAlura"></nav>
-    </header>
     <main>
-        <section class="container1">
+        <section class="conteiner">
 
-            <div class="esquerda">
-                <input class="text-input" id="textoInput" type="text" placeholder="Digite seu texto aqui!">
+            <div>
+                <input class="text-input"  type="text" placeholder="Digite seu texto aqui!">
             </div>
-            <div class="direita">
-                <img src="img/logoAlura2.svg" id="imgDireita">
-                <div id="texto">
-
-                    <img class="mensagem" src="img/mensagem.svg" alt="LogoAlura">
-                </div>
-                <input id="texto2" type="text" disabled>
-                <button id="copiar" type="button" name="button" onclick="copiar()"><p id="idcopiar">Copiar</p></button>
+            <div>
+                <img id="textAviso" src="img/hug.svg" alt="Apenas letras minúsculas e sem acentuação!! por favor!">
+                
             </div>
-
-        </section>
-        <section class="container2">
-            <div class="button_seccao2">
-                <p><img id="textAviso" src="img/hug.svg" alt="Apenas letras minúsculas e sem acentuação!! por favor!"></p>
-                <button type="button" id="botao_criptografar" name="button" onclick="criptografar()">Criptografar</button>
+            <div class="button-cont"><button type="button" id="botao_criptografar" name="button"
+                    onclick="criptografar()">Criptografar</button>
                 <button type="button" id="botao_descriptografar" name="button"
                     onclick="descriptografar()">Descriptografar</button>
-
             </div>
+
+
         </section>
+        <aside>
+            <div class="direita">
+                <img src="img/logoAlura2.svg" id="imgDireita">
+
+                <input id="texto2" type="text" disabled>
+                <button id="copiar" type="button" name="button" onclick="copiar()">
+                    <p id="idcopiar">Copiar</p>
+                </button>
+            </div>
+        </aside>
+
+
+
     </main>
 
     <footer>

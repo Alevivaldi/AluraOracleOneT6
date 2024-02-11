@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 :root{
@@ -9,128 +9,112 @@
     --gray-200:#d8dfe8;
     --white:#ffffff;
 }
-body{
-    width: 100%;
-    background: var(--gray-100);
-
+header{
+    height: 96px;
+    width: 375px;
+    
+    
 }
-.container1{
-    display:flex ;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-   
-}
-.container2{
-    display: flex;
-    height: 100%;
-    width: 100;
+nav img{
+    width: 2rem;
+    height: 3rem;
+    margin: 24px 0 0 16px;
 }
 
-.logo{
-    width: 80%;
-    
-    
+html, body{
+  
+   background: var(--gray-100);
+
 }
-.esquerda{
-    
-    width: 50%;
-    height: 50%;
-    border-radius: 24px;
-    
-    
+main{
+    height: calc(100%-96px);
 }
-.direita{
+.conteiner{
     display: flex;
-    margin-right: auto;
-    justify-content: flex-start;
     flex-direction: column;
-    width: 30%;
-    height: 100%;
-    border-radius: 24px;
-    background: var(--white);
     
 }
-.mensagem{
-    margin-left: 25%;
-    width: 55%;
-    
-    
-}
-.button_seccao2{
-    
-    width: 100%;
-    height: 100%;
-    border-radius: 24px;
-    
-}
-.logoImg{
-    margin-top: 1%;
-    margin-left: 5%;
-    float: inherit;
-}
-
 .text-input{
-    
-    margin-left: 10%;
-    margin-top: 25%;
-    width: 70%;
-    height: 70%;
+   
+    width: 21.4rem;
+    height: 3rem;
     color: var(--darkblue-400);
-    font-size: 20px;
+    font-size: 1rem;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
     border: none;
     outline: none;
     background: var(--gray-100);
     
-}
 
-
-
-#imgDireita{
-    margin-left: 16%;
-    width: 70%;
     
 }
-#texto{
+#textAviso{
+    margin-top: 15.68rem;
+    margin-left: 1rem;
     
-    height: 100%;
-    border-radius: 24px;
-    width: 100%;
+    
 }
-#texto2{
-   
-    color: var(--darkblue-400);
-    width: 80%;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    resize: none;
-    margin-left: 5%;
-    margin-top: 3%;
-}
-input[disabled]{
-    background-color: var(--white);
+
+.button-cont{
+    height: 158px;
+    margin-left: 1rem;
+    
+    max-width: 343px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
 }
 #botao_criptografar{
-    padding: 1%;
-    width: 10%;
-    height: 40%;
+    width:343px;
+    height: 67px;
+    margin-bottom: 24px;
     border-radius: 24px;
-    margin-left: 15%;
     background:var(--darkblue-400);
     cursor: pointer;
     text-decoration: none;
 }
 #botao_descriptografar{
-    padding: 1%;
-    width: 10%;
-    height: 40%;
+    width:343px;
+    height: 67px;
     border-radius: 24px;
-    margin-left: 10%;
     background: var(--gray-200);
     text-align: center;
+    
 }
+
+#mensagem{
+    position: 707px;
+    
+}
+#imgDireita{
+    margin-left: 16%;
+    width: 70%;
+    display: none;
+}
+
+#texto2{
+    background:  url("../img/mensagem.svg") center no-repeat;
+    background-color: var(--white);
+    width: 327px;
+    height: 186px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+    margin-top: 707px;
+    padding: 32px;
+    gap: 32px;
+    margin-left: 24px;
+    border-radius: 32px;
+}
+input[disabled]{
+    background-color: var(--white);
+}
+
+
 #copiar{   
     margin-left: 25%;
     width: 50%;
@@ -144,9 +128,7 @@ input[disabled]{
     display: none;
     text-align: center;
 }
-#textAviso{
-    margin-left: 15%;
-}
+
 #idcopiar{
     display: flex;
     justify-content: center;
