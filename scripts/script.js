@@ -23,6 +23,8 @@ function criptografar() {
     document.getElementById("texto2").style.backgroundColor ="#ffffff";
     let elemento = document.getElementById("texto2");
     elemento.style.display=" inherit";
+    let back = document.getElementById("idDireita");
+    back.style.background = "#ffffff";
     limpar();
 
     

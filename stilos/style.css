@@ -11,7 +11,7 @@
 }
 header{
     height: 96px;
-    width: 375px;
+    width: 23.43rem;
     
     
 }
@@ -57,13 +57,13 @@ main{
 }
 
 .button-cont{
-    height: 158px;
+    height: 9.9rem;
     margin-left: 1rem;
     
     max-width: 343px;
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 2rem;
 }
 #botao_criptografar{
     width:343px;
@@ -90,22 +90,19 @@ main{
     display: none;
 }
 
-#texto2{
-    
-   
+#texto2{   
     background-color: var(--gray-100);
-    width: 327px;
-    height: 41.18rem;
+    width: 17.43rem;
+    height: 27rem;;
     border: none;
-    outline: none;
+    margin-left: 2rem;
     font-size: 1rem;
     resize: none;
     margin-top: 1rem;
-    padding: 1rem;
+    padding:2rem;
     margin-bottom: 2rem;
     display: none;
-    
-    margin-left: 1.5rem;
+    padding-top: 1rem;
     border-radius: 32px;
 }
 #img2{
@@ -114,30 +111,39 @@ main{
     width: 327px;
     height: 11.65rem;
     border: none;
-    outline: none;
+    
     font-size: 1rem;
     resize: none;
     margin-top: 4rem;  
-    margin-left: 2rem;
+    margin-left: 1rem;
     border-radius: 32px;
 }
 input[disabled]{
     background-color: var(--white);
 }
-
-.direita{
-    border: black solid 1px;
+#idDireita{
+    background-color: none;
+    max-width: 21.43rem;
+    width: 21.43rem;
+    margin-left: 1rem;
+    border-radius: 32px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 37.18rem;   
+    
     
 }
+
 #copiar{
     background-color:none;
     width: 17.43rem;
-    position: 1rem;
-    padding: 1.5rem;
-    
-    border-radius: 24px;
+    padding:  1rem;
+    border-radius:32px;
     display: none;
+    
+    padding-bottom: 1rem;
     margin-left: 2rem;
+   
     
 }
 
