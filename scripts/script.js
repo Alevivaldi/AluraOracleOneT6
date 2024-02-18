@@ -8,6 +8,10 @@ function criptografar() {
    
     let texto = document.getElementById("textoInput").value.toLowerCase(); 
     let textoCriptografado = [];
+    if(texto ==0){
+        alert("nenhum texto foi digitado");
+        return 0;
+    }
     textoCriptografado = texto.replace(/e/g,"enter");
     textoCriptografado = textoCriptografado.replace(/o/g,"ober");
     textoCriptografado = textoCriptografado.replace(/i/g,"imes");
@@ -31,7 +35,10 @@ function criptografar() {
 }
 
 function descriptografar() {
-    
+    if(texto ==0){
+        alert("nenhum texto para descriptografar");
+        return 0;
+    }
     let texto2 = document.getElementById("textoInput").value.toLowerCase(); 
     let textoDescriptografado = [];
     textoDescriptografado = texto2.replace(/enter/g,"e");
