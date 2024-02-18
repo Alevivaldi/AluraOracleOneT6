@@ -34,7 +34,7 @@ main{
 .conteiner{
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
 }
 .text-input{
    resize: none;
@@ -61,14 +61,15 @@ main{
 .button-cont{
     height: 9.9rem;
     margin-left: 1rem;
-    
+    width: 100%;
     max-width: 343px;
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
 }
 #botao_criptografar{
-    width:343px;
+    max-width:343px;
+    width: 100%;
     height: 67px;
     margin-bottom: 2rem;
     border-radius: 24px;
@@ -78,7 +79,8 @@ main{
     border: var(--darkblue-400) solid 1px;
 }
 #botao_descriptografar{
-    width:343px;
+    max-width:343px;
+    width: 100%;
     height: 67px;
     border-radius: 24px;
     background: var(--gray-200);
@@ -210,7 +212,7 @@ main{
 .button-cont{
     height: 9.9rem;
     margin-left: 1rem;
-    width: 43rem;
+    width: 100%;
     max-width: 43rem;
     display: flex;
     flex-direction: row;
@@ -346,7 +348,7 @@ main{
 .button-cont{
     height: 4.18rem;
     margin-left: 15rem;
-    width: 42.5rem;
+    width: 100%;
     max-width: 43rem;
 }
 #botao_criptografar{
@@ -441,4 +443,15 @@ margin-top: 80px;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+}
+@media(min-width:1440px){
+
+main{
+    justify-content: space-around;
+}
+section{
+    margin-right: 0;
+}
+
+
 }
