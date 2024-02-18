@@ -46,18 +46,16 @@ main {
 
 .text-input {
     resize: none;
+    outline: none;
+    border: none;
     width: 21.4rem;
     height: 18rem;
     color: var(--darkblue-400);
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 3.5rem;
     margin-left: 1rem;
-    border: none;
-    outline: none;
     background: var(--gray-100);
-
-
-
+    line-height: 48px;
 }
 
 #textAviso {
@@ -75,6 +73,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    color: var(--darkblue-400);
 }
 
 #botao_criptografar {
@@ -87,6 +86,7 @@ main {
     cursor: pointer;
     text-decoration: none;
     border: var(--darkblue-400) solid 1px;
+    color: var(--white);
 }
 
 #botao_descriptografar {
@@ -97,8 +97,11 @@ main {
     background: var(--gray-200);
     text-align: center;
     border: var(--darkblue-400) solid 1px;
+    color: var(--red-400);
 }
-
+#textoInput::placeholder{
+    color: var(--darkblue-400);
+}
 
 #imgDireita {
 
@@ -115,10 +118,11 @@ main {
     background-color: var(--gray-100);
     width: 17.43rem;
     height: 27rem;
-    ;
+    line-height: 48px;
+    color: var(--darkblue-400);
     border: none;
     margin-left: 2rem;
-    font-size: 1rem;
+    font-size: 2rem;
     resize: none;
     margin-top: 1rem;
     padding: 2rem;
@@ -127,6 +131,9 @@ main {
     padding-top: 1rem;
     border-radius: 32px;
     outline: none;
+}
+#texto2::placeholder{
+    color: var(--darkblue-400);
 }
 
 #img2 {
@@ -142,8 +149,6 @@ main {
     font-size: 1rem;
     resize: none;
     margin-top: 4rem;
-
-
     border-radius: 32px;
 }
 
@@ -156,6 +161,7 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     height: 37.18rem;
+    
 
 
 }
@@ -169,7 +175,7 @@ main {
     border: var(--darkblue-400) solid 1px;
     padding-bottom: 1rem;
     margin-left: 2rem;
-
+    color: var(--darkblue-400);
 
 }
 
@@ -209,16 +215,12 @@ main {
     }
 
     .text-input {
-        resize: none;
         width: 43rem;
         height: 26.75rem;
-        color: var(--darkblue-400);
-        font-size: 1rem;
         margin-top: 7.5rem;
         margin-left: 1rem;
-        border: none;
-        outline: none;
-        background: var(--gray-100);
+
+        
 
     }
 
@@ -265,15 +267,11 @@ main {
         background-color: var(--gray-100);
         width: 43rem;
         height: 11.25rem;
-        ;
-        border: none;
         margin-left: 0;
-        font-size: 1rem;
-        resize: none;
         margin-top: 0;
         padding: 0 0 0 1rem;
         margin-bottom: 0;
-        display: none;
+        
 
 
     }
@@ -358,16 +356,12 @@ main {
     }
 
     .text-input {
-        resize: none;
+       
         width: 42.5rem;
         height: 18rem;
-        color: var(--darkblue-400);
-        font-size: 1rem;
         margin-top: 3rem;
         margin-left: 15rem;
-        border: none;
-        outline: none;
-        background: var(--gray-100);
+
     }
 
     #textAviso {
@@ -408,10 +402,8 @@ main {
         background-color: var(--gray-100);
         width: 25rem;
         height: 48.81rem;
-        ;
         border: none;
         margin-left: 0;
-        font-size: 1rem;
         resize: none;
         margin-top: 0;
         display: none;
