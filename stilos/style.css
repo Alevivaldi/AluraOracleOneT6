@@ -35,7 +35,8 @@ body {
 }
 
 main {
-    height: calc(100%-96px);
+    width: 100vw;
+    height: 100vh;
 }
 
 .conteiner {
@@ -48,7 +49,8 @@ main {
     resize: none;
     outline: none;
     border: none;
-    width: 21.4rem;
+    max-width: 21.4rem;
+    width: 100%;
     height: 18rem;
     color: var(--darkblue-400);
     font-size: 2rem;
@@ -104,32 +106,30 @@ main {
 }
 
 #imgDireita {
-
+    width: 100%;
     display: none;
 }
 
 .paragrafo {
     padding-top: 1rem;
     height: 4rem;
+    width: 100%;
 
 }
 
 #texto2 {
     background-color: var(--gray-100);
-    width: 17.43rem;
+    margin-left: 1rem;
+    max-width: 17.43rem;
+    width: 100%;
     height: 27rem;
     line-height: 48px;
     color: var(--darkblue-400);
     border: none;
-    margin-left: 2rem;
     font-size: 2rem;
     resize: none;
-    margin-top: 1rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     display: none;
-    padding-top: 1rem;
-    border-radius: 32px;
     outline: none;
 }
 #texto2::placeholder{
@@ -139,7 +139,7 @@ main {
 #img2 {
     padding: 2rem;
     background-color: var(--white);
-    width: 327px;
+    width: 100%;
     height: 11.65rem;
     border: none;
     display: flex;
@@ -155,82 +155,71 @@ main {
 #idDireita {
     background-color: none;
     max-width: 21.43rem;
-    width: 21.43rem;
+    width: 100%;
     margin-left: 1rem;
     border-radius: 32px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     height: 37.18rem;
-    
-
+}
+.button-copiado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-
 #copiar {
+    
     background-color: none;
-    width: 17.43rem;
+    max-width: 17.43rem;
+    width: 100%;
+    height: 67px;
     padding: 1rem;
     border-radius: 32px;
     display: none;
     border: var(--darkblue-400) solid 1px;
-    padding-bottom: 1rem;
-    margin-left: 2rem;
+    justify-content: center;
+    padding: 1.5rem;
     color: var(--darkblue-400);
+    margin-left: 2rem;
 
 }
 
-#idcopiar {
-
-    width: 14.43rem;
-    height: 19px;
-
+aside{
+    width: 100%;
 }
 
 @media(min-width: 375px) {
-
-
-
     header {
         height: 120px;
         width: 176px;
-
-
     }
-
     nav img {
         width: 2rem;
         height: 3rem;
         margin: 73.42px 0 0 40px;
     }
-
-
     main {
-        height: calc(100%-96px);
+        display: flex;
+        flex-direction: column;
     }
-
     .conteiner {
         display: flex;
         flex-direction: column;
 
     }
-
     .text-input {
-        width: 43rem;
+        max-width: 43rem;
         height: 26.75rem;
         margin-top: 7.5rem;
         margin-left: 1rem;
-
-        
-
     }
-
     #textAviso {
         margin-top: 0.75rem;
         margin-left: 1rem;
         width: 252px;
         height: 18px;
     }
-
     .button-cont {
         height: 9.9rem;
         margin-left: 1rem;
@@ -241,7 +230,6 @@ main {
         margin-bottom: 2rem;
         margin-top: 1rem;
     }
-
     #botao_criptografar {
         width: 20.75rem;
         height: 4.18rem;
@@ -252,7 +240,6 @@ main {
         text-decoration: none;
         margin-right: 1rem;
     }
-
     #botao_descriptografar {
         width: 20.75rem;
         height: 4.18rem;
@@ -260,73 +247,65 @@ main {
         background: var(--gray-200);
         text-align: center;
         margin-left: 1rem;
-
     }
-
     #texto2 {
         background-color: var(--gray-100);
-        width: 43rem;
-        height: 11.25rem;
-        margin-left: 0;
-        margin-top: 0;
-        padding: 0 0 0 1rem;
-        margin-bottom: 0;
-        
-
-
+        max-width: 39rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
-
     #img2 {
-
+        display: flex;
         background-color: var(--white);
-        width: 43rem;
+        width: 100%;
         height: 8.31rem;
         border: none;
         font-size: 1rem;
         resize: none;
         margin-top: 4rem;
         margin-left: 1rem;
-        border-radius: 32px;
+        border-radius: 32px;  
     }
-
     #idDireita {
         display: flex;
         background-color: none;
         max-width: 43rem;
-        width: 43rem;
+        width: 100%;
         margin-left: 1rem;
         border-radius: 32px;
         margin-top: 0;
         margin-bottom: 3rem;
-        height: 21.43rem;
-        border: none;
-
+        height: 21.43rem;  
     }
-
     #copiar {
+       
         background-color: none;
-        width: 39rem;
-        display: none;
+        max-width: 39rem;
+        width: 100%;
         height: 4.2rem;
         padding-bottom: 1rem;
-        margin-left: 2rem;
-
-
-    }
-
-    .button-copiado {
-        text-align: center;
-        height: 11.2rem;
-        background-color: var(--white);
-        margin-top: 2rem;
+        display: none;
         border-radius: 32px;
-
-    }
-
-    #copiar {
-        background-color: var(--white);
+        border: var(--darkblue-400) solid 1px;
+        padding: 1.5rem;
+        color: var(--darkblue-400);
+        margin-right: 2rem;
         margin-bottom: 2rem;
-        margin-top: 2rem;
+    }
+   
+    #button-copiado {
+        
+        display: none;
+        width: 100%;
+        height: 21.2rem;
+        background-color: var(--white);
+        margin-top: 1rem;
+        border-radius: 32px;
+        margin-top: 0;
+    }
+    .paragrafo{
+        padding: 0;
     }
 }
 
@@ -335,60 +314,47 @@ main {
         height: 40px;
         width: 1440px;
     }
-
     nav img {
         width: 31px;
         height: 3rem;
         margin: 40px 0 0 88px;
     }
-
     main {
-
-        display: flex;
         flex-direction: row;
     }
-
     .conteiner {
         width: 62.5rem;
         display: flex;
         flex-direction: column;
         margin-right: 5rem;
     }
-
     .text-input {
-       
-        width: 42.5rem;
         height: 18rem;
         margin-top: 3rem;
         margin-left: 15rem;
 
     }
-
     #textAviso {
         margin-top: 24.68rem;
         margin-left: 15rem;
         width: 15.75rem;
         height: 18px;
     }
-
     .button-cont {
         height: 4.18rem;
         margin-left: 15rem;
         width: 100%;
         max-width: 43rem;
     }
-
     #botao_criptografar {
-        width: 20.75rem;
+        max-width: 20.75rem;
         height: 4.18rem;
-
         border-radius: 24px;
         background: var(--darkblue-400);
         cursor: pointer;
         text-decoration: none;
         margin-right: 0.75rem;
     }
-
     #botao_descriptografar {
         width: 20.75rem;
         height: 4.18rem;
@@ -397,98 +363,91 @@ main {
         text-align: center;
         margin-left: 0.75rem;
     }
-
     #texto2 {
+        height: 59rem;
         background-color: var(--gray-100);
-        width: 25rem;
-        height: 48.81rem;
-        border: none;
-        margin-left: 0;
-        resize: none;
-        margin-top: 0;
-        display: none;
+        max-width: 20rem;
+        width: 100%;
+        
     }
-
     #img2 {
-
         background-color: var(--white);
         width: 25rem;
-        height: 59rem;
-        border: none;
-        font-size: 1rem;
-        resize: none;
+        width: 100%;
         border-radius: 32px;
         margin: 0;
+        padding: 0;
+        height: 59rem;
     }
-
     h2,
     #paragrafo {
         margin-top: 2rem;
     }
-
-    aside {
-        width: 25rem;
-        height: 59rem;
-        margin: 0;
-        padding: 0;
-    }
-
     section {
         margin-top: 80px;
+        width: 100%;
     }
-
     .paragrafo {
         padding: 0px;
         margin: 0px;
     }
-
     #idDireita {
-
-        background-color: none;
         padding: 0;
-        width: 25rem;
-        border-radius: 32px;
-        height: 59rem;
-        border: none;
+        max-width: 25rem;
+        width: 100%;
         margin: 0px;
+        
     }
-
     #imgDireita {
         display: block;
         margin-top: 15.18rem;
     }
-
     #copiar {
-
-        background-color: none;
-        width: 21rem;
-        display: none;
+        max-width: 21rem;
         height: 4.2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
         margin-left: 2rem;
+        margin-bottom: 3rem;
     }
-
-    .button-copiado {
-        height: 11.2rem;
-        background-color: var(--white);
-        margin-top: 2rem;
-        border-radius: 32px;
+    #button-copiado {
+        width: 100%;
+        height: 59.2rem;
+        margin-top: 1rem;
     }
-
-    #copiar {
-        background-color: var(--white);
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+    aside{
+        padding: 0;
+        margin: 0;
     }
 }
 
 @media(min-width:1440px) {
-
+    header {
+        height: 40px;
+        min-width: 1440px;
+    }
     main {
-        justify-content: space-around;
+        display: flex;
+        justify-content: space-between;
     }
 
     section {
+        margin-left: 8%;
         margin-right: 0;
+    }
+    aside{
+        margin-left: 0;
+        max-width: 25rem;
+        width: 100%;
+        margin-right: 5%;
+        padding-right: 1rem;
+    }
+    #idDireita {
+        background-color: none;
+        padding: 0;
+        max-width: 25rem;
+        border-radius: 32px;
+        height: 59rem;
+        border: none;
+        margin: 0px;
     }
 }

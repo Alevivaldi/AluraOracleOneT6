@@ -6,11 +6,14 @@ function criptografar() {
    document.getElementById("texto2").setAttribute("placeholder","Nenhuma Mensagem");
   
    
-    let texto = document.getElementById("textoInput").value.toLowerCase(); 
+    texto = document.getElementById("textoInput").value.toLowerCase(); 
     if(texto ==0){
         alert("nenhum texto foi digitado");
         return 0;
     }
+    
+
+
     let textoCriptografado = [];
     textoCriptografado = texto.replace(/e/g,"enter");
     textoCriptografado = textoCriptografado.replace(/o/g,"ober");
@@ -24,6 +27,7 @@ function criptografar() {
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
     document.getElementById("texto2").style.display = "show";
+    document.getElementById("button-copiado").style.display = "inherit";
     document.getElementById("texto2").style.backgroundColor ="#ffffff";
     let elemento = document.getElementById("texto2");
     elemento.style.display=" inherit";
@@ -37,14 +41,14 @@ function criptografar() {
 
 function descriptografar() {
     
-    let texto2 = document.getElementById("textoInput").value.toLowerCase(); 
-    if(texto2 ==0){
+    texto = document.getElementById("textoInput").value.toLowerCase(); 
+    if(texto ==0){
         alert("nenhum texto foi digitado");
         return 0;
     }
     
     let textoDescriptografado = [];
-    textoDescriptografado = texto2.replace(/enter/g,"e");
+    textoDescriptografado = texto.replace(/enter/g,"e");
     textoDescriptografado = textoDescriptografado.replace(/ober/g,"o");
     textoDescriptografado = textoDescriptografado.replace(/imes/g,"i");
     textoDescriptografado = textoDescriptografado.replace(/ai/g,"a");
@@ -56,6 +60,7 @@ function descriptografar() {
     document.getElementById("copiar").style.display = "inherit";
     document.getElementById("texto2").style.display = "show";
     document.getElementById("img2").style.display = "none";
+    document.getElementById("button-copiado").style.display = "inherit";
     document.getElementById("texto2").style.backgroundColor ="#ffffff";
     let elemento = document.getElementById("texto2");
     elemento = document.getElementById("texto2");
